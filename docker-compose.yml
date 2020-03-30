@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  nginx:
+   build: .
+   image: rhweb
+   container_name: rhwebserver
+   restart: always
+   ports:
+    - "9090:8080"
+   hostname: debweb
